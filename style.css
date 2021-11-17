@@ -93,10 +93,27 @@ body {
     height: 80%;
   }
   footer {
+    position: fixed;
+    z-index: -100;
     color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
     height: 3em;
-    padding-right: 2em;
+    bottom: 0;
+  }
+  .rights {
+    margin-right: 3em;
+  }
+  @media screen and (max-width: 800px) {
+    .icon {
+      max-width: 45%;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1em;
+    }
   }
