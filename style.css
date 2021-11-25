@@ -1,8 +1,10 @@
 body {
     margin: 1em;
     font-family: helvetica;
-    background-image: url("static.gif");
+/*    background-image: url("static.gif");
+*/
     background-size: cover;
+    height: 100%;
   }
   nav {
     display: flex;
