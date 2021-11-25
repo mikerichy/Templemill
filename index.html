@@ -10,30 +10,38 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <nav>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="./links/LiveStreaming/liveStr.html">Live Streaming</a>
-    <a href="./links/Commercials/comm.html">Commercials</a>
-    <a href="./links/About Us/aboutus.html">About Us</a>
-    <a href="./links/Contact Us/contact.html">Contact Us</a>
-  </div>
-  <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <img alt="logo" class="icon" src="TemplemillWhite.png">
-  <div></div>
-</nav>
-<div class="title">
-<h1>Utah's Trusted Video Production Company</h1>
-<h2>Livestreams, Creative, and Commerical</h2>
+    <div class="main">
+      <div class="container">
+           <nav>
+          <div id="navSide" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./links/LiveStreaming/liveStr.html">Live Streaming</a>
+            <a href="./links/Commercials/comm.html">Commercials</a>
+            <a href="./links/About Us/aboutus.html">About Us</a>
+            <a href="./links/Contact Us/contact.html">Contact Us</a>
+          </div>
+          <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <img alt="logo" class="icon" src="TemplemillWhite.png">
+          <div></div>
+        </nav>
+        <div class="title">
+        <h1>Utah's Trusted Video Production Company</h1>
+        <h2>Livestreams, Creative, and Commerical</h2>
+            </div>
+        <div class="vidContainer">
+          <div class="main-vid">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/de74iVkdk68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <footer>
+          <div class="rights">
+          <strong>&copy; Templemill Inc All Rights Reserved 2021</strong></div>
+        </footer>
+      </div>
+      <video autoplay loop muted width="100%" id="backgroundVid">
+        <source src="ezgif.com-gif-maker.mp4" type="video/mp4" />
+        <source src="ezgif.com-gif-maker.webm" type="video/webm" />
+    </video> 
 </div>
-<div class="container">
-  <div class="main-vid">
-    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/de74iVkdk68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>
-<footer>
-  <div class="rights">
-  <strong>&copy; Templemill Inc All Rights Reserved 2021</strong></div>
-</footer>
   </body>
 </html>
