@@ -76,7 +76,7 @@ body {
     color: white;
     flex-direction: column;
   }
-  #backgroundVid{
+  .backgroundVid{
     position: fixed;
     right: 0;
     bottom: 0;
