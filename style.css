@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: helvetica;
     background-size: cover;
+    background-image: url(static.gif);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -77,6 +78,7 @@ body {
     flex-direction: column;
   }
   .backgroundVid{
+    display: none;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -137,6 +139,9 @@ body {
     margin-right: 3em;
   }
   @media screen and (max-width: 800px) {
+    body {
+      background-image: none;
+    }
     .icon {
       max-width: 45%;
     }
@@ -146,8 +151,8 @@ body {
     h2 {
       font-size: .75em;
     }
-    .main {
-      
+    .backgroundVid {
+      display: inline;
     }
     .title{
       margin-top: -10em;
