@@ -149,9 +149,11 @@ body {
     margin-right: 3em;
   }
   @media screen and (max-width: 800px) {
+    /*
     body {
       background-image: none;
     }
+    */
     .icon {
       max-width: 45%;
     }
