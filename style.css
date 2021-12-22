@@ -152,6 +152,7 @@ body {
     transform: translateY(5px);
     height: 2em;
     width: auto;
+    padding: .5em;
   }
   .rights {
     margin-right: 3em;
