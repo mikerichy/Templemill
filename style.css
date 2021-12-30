@@ -120,6 +120,7 @@ body {
   }
   .strImg {
     max-width: 60%;
+    width: auto;
     max-height: auto;
     margin: 2em 0;
   }
