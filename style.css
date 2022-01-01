@@ -120,9 +120,8 @@ body {
   }
   .strImg {
     max-width: 60%;
-    width: auto;
-    max-height: auto;
     margin: 2em 0;
+    display: inline-block;
   }
   .main-vid {
     position: relative;
@@ -175,7 +174,7 @@ body {
       display: inline;
     }
     .strImg {
-      max-width: auto;
+      max-width: 100%;
     }
     .video {
       width: 100%;
