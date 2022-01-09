@@ -9,7 +9,7 @@ body {
   }
   span {
     font-size:35px;
-    cursor:pointer
+    cursor:pointer;
   }
   .main {
     width: 100%;
