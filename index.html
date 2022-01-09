@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy"
-      content="frame-src youtube.com https://www.youtube.com;">
+    <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self'; frame-src youtube.com https://www.youtube.com;">
     <title>Templemill</title>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
     <link rel="icon" href="images/TLogo.png">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -16,13 +16,13 @@
       <div class="container">
            <nav>
           <div id="navSide" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" id="xBtn">&times;</a>
             <a href="./links/LiveStreaming/liveStr.html">Live Streaming</a>
             <a href="./links/Commercials/comm.html">Commercials</a>
             <a href="./links/About Us/aboutus.html">About Us</a>
             <a href="./links/Contact Us/contact.html">Contact Us</a>
           </div>
-          <span onclick="openNav()">&#9776;</span>
+          <span id="openNav">&#9776;</span>
           <img alt="logo" class="icon" src="images/TemplemillWhite.png">
           <div></div>
         </nav>
