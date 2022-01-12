@@ -7,9 +7,9 @@ body {
     width: 100vw;
     overflow-x: hidden;
   }
-  span {
-    font-size:35px;
-    cursor:pointer;
+  .span {
+    margin-right: 1.5em;
+    cursor: pointer;
   }
   .main {
     width: 100%;
@@ -37,6 +37,10 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+  }
+  .navSpace {
+    opacity: 0;
+    margin-left: 1.5em;
   }
   .sidenav {
     height: 100%;
@@ -68,10 +72,6 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  span {
-    color: white;
-    margin-right: 1em;
   }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -106,10 +106,15 @@ body {
  .title {
    width: 100%;
    padding: 0 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
    
   }
   h1 {
-    font-size: 3em;
+    font-size: 5vh;
     text-align: center;
     padding: .75em 0;
     margin: 0;
@@ -117,6 +122,7 @@ body {
     text-shadow: 2px 2px black;
   }
   h2 {
+    font-size: 3vh;
     color: white;
     text-align: center;
     padding-bottom: 2em;
@@ -143,20 +149,25 @@ body {
   }
   footer {
     color: white;
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    justify-self: flex-end;
+    justify-content: space-between;
     align-items: center;
-    vertical-align: middle;
-    padding-bottom: 1em;
+    padding-bottom: .75em;
     width: 100%;
     height: 3em;
   }
+  .footLinks {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75em;
+  }
   .foot-icon {
-    transform: translateY(5px);
     height: 2em;
     width: auto;
-    padding: .5em;
   }
   .rights {
     margin-right: 3em;
@@ -190,5 +201,9 @@ body {
     footer {
       font-size: 10px;
       bottom: 10px;
+    }
+    .footLinks {
+      position: inherit;
+      margin-left: 3em;
     }
   }
