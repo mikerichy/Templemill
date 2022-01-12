@@ -189,6 +189,9 @@ body {
     .container {
       display: block;
     }
+    .title {
+      text-align: center;
+    }
     h1 {
       font-size: 1.25em;
     }
@@ -209,6 +212,7 @@ body {
     footer {
       font-size: 10px;
       bottom: 10px;
+      position: absolute;
     }
     .footLinks {
       position: inherit;
