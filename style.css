@@ -5,42 +5,34 @@ body {
     background-image: url(images/static.gif);
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-y: overlay;
+    color: white;
   }
-  .span {
-    margin-right: 1.5em;
-    cursor: pointer;
-  }
-  .main {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-  .container {
-    width: 100%;
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .cont {
-    padding: 0 5em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  /* Nav */
   nav {
     display: flex;
     width: 100%;
-    flex-direction: row-reverse;
+    height: 4em;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding-top: 3em;
   }
-  .navSpace {
-    opacity: 0;
-    margin-left: 1.5em;
+  .span {
+    margin-right: 4em;
+    cursor: pointer;
+  }
+  .headr {
+    position: absolute;
+    height: 4em;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    z-index: -1;
+  }
+  .icon {
+    max-height: 50%;
   }
   .sidenav {
     height: 100%;
@@ -77,9 +69,40 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  .icon {
-    max-height: auto;
-    max-width: 15%;
+/* end Nav */
+/* main body */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+ .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+  .main {
+    width: 100%
+  }
+  h1 {
+    font-size: 5vh;
+    text-shadow: 2px 2px black;
+  }
+  h2 {
+    font-size: 3vh;
+    text-shadow: 2px 2px black;
+  }
+  /* end Body */
+  /* start content */
+  .cont {
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   p {
     color: white;
@@ -103,35 +126,8 @@ body {
     z-index: -500;
     object-fit: fill;
   }
- .title {
-   width: 100%;
-   padding: 0 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   flex-direction: column;
-   
-  }
-  h1 {
-    font-size: 5vh;
-    text-align: center;
-    padding: .75em 0;
-    margin: 0;
-    color: white;
-    text-shadow: 2px 2px black;
-  }
-  h2 {
-    font-size: 3vh;
-    color: white;
-    text-align: center;
-    padding-bottom: 2em;
-    text-shadow: 2px 2px black;
-  }
   .strImg {
-    max-width: 60%;
-    margin: 2em 0;
-    display: inline-block;
+    max-width: 40%;
   }
   .main-vid {
     position: relative;
@@ -147,6 +143,7 @@ body {
     width: 80%;
     height: 80%;
   }
+  /* start footer */
   footer {
     color: white;
     position: relative;
@@ -156,6 +153,10 @@ body {
     padding-bottom: .75em;
     width: 100%;
     height: 3em;
+    bottom: 0;
+  }
+  #foot{
+    position: absolute;
   }
   .footLinks {
     position: absolute;
@@ -175,6 +176,12 @@ body {
     justify-content: center;
     align-items: center;
   }
+  p a:visited {
+    color: #197BBD;
+  }
+  p a {
+    color: gray;
+  }
   @media screen and (max-width: 700px) {
     .icon {
       max-width: 45%;
@@ -193,6 +200,7 @@ body {
     }
     .strImg {
       max-width: 80%;
+      margin: 0;
     }
     .video {
       width: 100%;
