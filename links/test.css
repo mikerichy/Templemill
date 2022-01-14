@@ -1,16 +1,12 @@
-@font-face {
-  font-family: Futura;
-  src: url('futura-std-4-cufonfonts-webfont/FuturaStdBookOblique.woff') format("WOFF");
-  font-weight: normal;
-}
 body {
     margin: 0;
-    font-family: Futura, Helvetica;
+    font-family: helvetica;
     background-size: cover;
-    background-image: url(images/static.gif);
+    background-image: url(../images/static.gif);
     height: 100vh;
     width: 100vw;
     overflow-y: overlay;
+    overflow-x: hidden;
     color: white;
   }
   /* Nav */
@@ -22,78 +18,80 @@ body {
     justify-content: flex-end;
     padding-top: 3em;
   }
-    /* nav icon */
-    .visuallyHidden {
-      position: absolute;
-      clip: rect(0 0 0 0); 
-   }
-   .menuIcon {
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 4vh;
-      z-index: 100;
-   }
-   .hamburger {
-      margin: 0 auto;
-      margin-top: 30px;
-      width: 30px;
-      height: 30px;
-      position: relative;
-      cursor: pointer;
-   }
-   .hamburger .bar {
-      padding: 0;
-      width: 30px;
-      height: 4px;
-      background-color: white;
-      display: block;
-      border-radius: 4px;
-      transition: all 0.4s ease-in-out;
-      position: absolute; 
-   }
-   .bar1 {
-      top: 0;
-   }
-   .bar2,
-   .bar3 {
-      top: 13.5px;
-   }
-   .bar3 {
-      right: 0;
-   }
-   .bar4 {
-      bottom: 0;
-   }
-   .checkbox1:checked + label > .hamburger1 > .bar1{
-      transform: rotate(45deg);
-      transform-origin: 5%;
-      width: 41px;
-      background-color: black;
-   }
-   .checkbox1:checked + label > .hamburger1 > .bar2 {
-      transform: translateX(-40px);
-      background-color: transparent;
-   }
-   .checkbox1:checked + label > .hamburger1 > .bar3 {
-      transform: translateX(40px);
-      background-color: transparent;
-   }
-   .checkbox1:checked + label > .hamburger1 > .bar4 {
-      transform-origin: 5%;
-      transform: rotate(-45deg);
-      width: 41px;
-      background-color: black;
-   }
-    /* end */
+  /* nav icon */
+  .visuallyHidden {
+    position: absolute;
+    clip: rect(0 0 0 0); 
+ }
+ .closeNav {
+   opacity: .01;
+ }
+ .container1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3vh;
+    z-index: 100;
+ }
+ .hamburger {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+ }
+ .hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+ }
+ .bar1 {
+    top: 0;
+ }
+ .bar2,
+ .bar3 {
+    top: 13.5px;
+ }
+ .bar3 {
+    right: 0;
+ }
+ .bar4 {
+    bottom: 0;
+ }
+ .checkbox1:checked + label > .hamburger1 > .bar1{
+    transform: rotate(45deg);
+    transform-origin: 5%;
+    width: 41px;
+    background-color: black;
+ }
+ .checkbox1:checked + label > .hamburger1 > .bar2 {
+    transform: translateX(-40px);
+    background-color: transparent;
+ }
+ .checkbox1:checked + label > .hamburger1 > .bar3 {
+    transform: translateX(40px);
+    background-color: transparent;
+ }
+ .checkbox1:checked + label > .hamburger1 > .bar4 {
+    transform-origin: 5%;
+    transform: rotate(-45deg);
+    width: 41px;
+    background-color: black;
+ }
+  /* end */
   .headr {
     position: absolute;
     height: 4em;
     left: 0; top: 0; right: 0; bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 3em;
-    z-index: -100;
+    z-index: -1;
   }
   .icon {
     max-height: 50%;
@@ -158,23 +156,19 @@ body {
     font-size: 3vh;
     text-shadow: 2px 2px black;
   }
-  .contact {
-    display: flex;
-    justify-content: center;
-  }
   /* end Body */
   /* start content */
   .cont {
-    padding: 2em 20vh;
+    padding: 2em 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
   }
   p {
     color: white;
-    font-size: 20px;
+    font-size: 1.35em;
   }
   .vidContainer {
     display: flex;
@@ -195,9 +189,7 @@ body {
     object-fit: fill;
   }
   .strImg {
-    max-width: 60%;
-    padding-top: 2em;
-    align-self: center;
+    max-width: 40%;
   }
   .main-vid {
     position: relative;
@@ -211,12 +203,12 @@ body {
     position: absolute;
     top: 0;
     width: 80%;
-    height: 70%;
+    height: 80%;
   }
   /* start footer */
   footer {
     color: white;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -227,9 +219,6 @@ body {
   }
   #foot{
     position: absolute;
-  }
-  #footR{
-    position: relative;
   }
   .footLinks {
     position: absolute;
@@ -255,32 +244,27 @@ body {
   p a {
     color: gray;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 700px) {
     .icon {
-      max-height: 45%;
+      max-width: 45%;
     }
-    nav {
-      padding-top: 0;
+    .container {
+      display: block;
     }
-    .headr {
-      align-items: center;
-      padding-top: 1em;
+    .title {
+      text-align: center;
     }
     h1 {
       font-size: 1.25em;
     }
-    h2{
-      font-size: .8em;
+    h2 {
+      font-size: .75em;
     }
-    p {
-      font-size: 1em;
-      text-align: start;
-    }
-    .cont {
-      padding: 2em 5vh;
+    .backgroundVid {
+      display: inline;
     }
     .strImg {
-      max-width: 100%;
+      max-width: 80%;
       margin: 0;
     }
     .video {
@@ -295,10 +279,5 @@ body {
     .footLinks {
       position: inherit;
       margin-left: 3em;
-    }
-  }
-  @media screen and (max-width: 400px) {
-    .headr{
-      display: none;
     }
   }
