@@ -257,7 +257,7 @@ body {
   }
   @media screen and (max-width: 900px) {
     .icon {
-      max-height: 45%;
+      max-height: 36%;
     }
     nav {
       padding-top: 0;
@@ -265,6 +265,7 @@ body {
     .headr {
       align-items: center;
       padding-top: 1em;
+      padding-right: .25em;
     }
     h1 {
       font-size: 1.25em;
@@ -282,6 +283,7 @@ body {
     .strImg {
       max-width: 100%;
       margin: 0;
+      object-fit: scale-down;
     }
     .video {
       width: 100%;
@@ -297,7 +299,7 @@ body {
       margin-left: 3em;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 300px) {
     .headr{
       display: none;
     }
