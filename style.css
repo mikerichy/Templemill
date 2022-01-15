@@ -162,6 +162,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .cForm {
+    background-color: rgba(255, 255, 255);
+  }
   /* end Body */
   /* start content */
   .cont {
