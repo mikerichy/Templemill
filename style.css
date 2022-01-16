@@ -1,6 +1,6 @@
 @font-face {
   font-family: Futura;
-  src: url('futura-std-4-cufonfonts-webfont/FuturaStdBookOblique.woff') format("WOFF");
+  src: url('futura-std-4-cufonfonts-webfont/FuturaStdBold.woff') format("WOFF");
   font-weight: normal;
 }
 body {
@@ -96,7 +96,7 @@ body {
     z-index: -100;
   }
   .icon {
-    max-height: 50%;
+    max-height: 30%;
   }
   .sidenav {
     height: 100%;
@@ -261,7 +261,7 @@ body {
   }
   @media screen and (max-width: 900px) {
     .icon {
-      max-height: 36%;
+      max-height: 20%;
     }
     nav {
       padding-top: 0;
@@ -272,7 +272,7 @@ body {
       padding-right: .25em;
     }
     h1 {
-      font-size: 1.25em;
+      font-size: 1.3em;
     }
     h2{
       font-size: .8em;
