@@ -1,6 +1,6 @@
 @font-face {
   font-family: Futura;
-  src: url('futura-std-4-cufonfonts-webfont/FuturaStdBold.woff') format("WOFF");
+  src: url('futura-std-4-cufonfonts-webfont/FuturaStdMedium.woff') format("WOFF");
   font-weight: normal;
 }
 body {
@@ -147,6 +147,9 @@ body {
   align-items: center;
   flex-direction: column;
   }
+  .headerSpacing {
+    margin: 3.5em;
+  }
   .main {
     width: 100%
   }
@@ -174,7 +177,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    text-align: center;
   }
   p {
     color: white;
